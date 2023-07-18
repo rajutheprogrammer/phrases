@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .options input {
+            margin-right: 5px;
+        }
+
+        .submit-btn {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Mobile view adjustments */
+        @media only screen and (max-width: 480px) {
+            .container {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            .submit-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> English language phrases </h1>
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">1. Abandon hope all ye who enter here:</div>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> a) To warn people about a dangerous or unpleasant situation.</label>
+                <label><input type="radio" name="q1" value="b"> b) To predict a bright future.</label>
+                <label><input type="radio" name="q1" value="c"> c) To encourage hope and optimism.</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">2. Beat around the bush:</div>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> a) To avoid directly addressing an issue or topic.</label>
+                <label><input type="radio" name="q2" value="b"> b) To promote environmental conservation.</label>
+                <label><input type="radio" name="q2" value="c"> c) To rush and finish a task.</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">3. Bury the hatchet:</div>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> a) To make peace and resolve conflicts.</label>
+                <label><input type="radio" name="q3" value="b"> b) To bury a weapon in the ground.</label>
+                <label><input type="radio" name="q3" value="c"> c) To dig up old memories.</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">4. Cut to the chase:</div>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> a) To get to the main point without unnecessary details.</label>
+                <label><input type="radio" name="q4" value="b"> b) To cut something with scissors.</label>
+                <label><input type="radio" name="q4" value="c"> c) To take a shortcut.</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">5. Fait accompli:</div>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> a) An irreversible or accomplished fact.</label>
+                <label><input type="radio" name="q5" value="b"> b) A French dessert.</label>
+                <label><input type="radio" name="q5" value="c"> c) A type of dance.</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">6. Haste makes waste:</div>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> a) Acting too quickly can result in mistakes or inefficiency.</label>
+                <label><input type="radio" name="q6" value="b"> b) Being cautious is always better.</label>
+                <label><input type="radio" name="q6" value="c"> c) Waste is unavoidable.</label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">7. In the heat of the moment:</div>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> a) Doing or saying something impulsively without careful consideration.</label>
+                <label><input type="radio" name="q7" value="b"> b) Feeling cold in a warm place.</label>
+                <label><input type="radio" name="q7" value="c"> c) Cooking food in a microwave.</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">8. Jump on the bandwagon:</div>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> a) To join a popular trend or activity.</label>
+                <label><input type="radio" name="q8" value="b"> b) To perform a daring stunt.</label>
+                <label><input type="radio" name="q8" value="c"> c) To criticize others.</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">9. Keep your chin up:</div>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> a) To remain optimistic in difficult situations.</label>
+                <label><input type="radio" name="q9" value="b"> b) To look down when walking.</label>
+                <label><input type="radio" name="q9" value="c"> c) To hide one's emotions.</label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">10. Needle in a haystack:</div>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> a) Something that is extremely difficult to find or locate.</label>
+                <label><input type="radio" name="q10" value="b"> b) A type of sewing tool.</label>
+                <label><input type="radio" name="q10" value="c"> c) A type of farming practice.</label>
+            </div>
+
+            <button class="submit-btn" type="button" onclick="showResult()">Submit</button>
+        </form>
+        <div class="result" id="quizResult"></div>
+    </div>
+
+    <script>
+        function showResult() {
+            var quizForm = document.getElementById('quizForm');
+            var quizResult = document.getElementById('quizResult');
+
+            // Define the correct answers for each question
+            var correctAnswers = ['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'];
+
+            var score = 0;
+            var userAnswers = [];
+
+            for (var i = 1; i <= correctAnswers.length; i++) {
+                var selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    userAnswers.push(selectedOption.value);
+                    if (selectedOption.value === correctAnswers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            var resultMessage = 'You scored ' + score + ' out of ' + correctAnswers.length + ' questions!';
+
+            quizResult.textContent = resultMessage;
+        }
+    </script>
+</body>
+</html>
